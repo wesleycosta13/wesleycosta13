@@ -7,6 +7,8 @@
 
 ![Wesley Costa GitHub stats](https://github-readme-stats.vercel.app/api?username=wesleycosta13&show_icons=true&theme=dracula)
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wesleycosta13)](https://github.com/wesleycosta13)
+
 ## Tecnologia que eu uso no meu dia
 
 <div style="display: inline_block">
@@ -18,6 +20,6 @@
   <img align="center" alt="nodejs" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
   <img align="center" alt="c#" src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
   <img align="center" alt="c" src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
-
 </div><br/>
 
+Como um vírus no código, enfrento os desafios da vida digital, adaptando-me e evoluindo para sobreviver.

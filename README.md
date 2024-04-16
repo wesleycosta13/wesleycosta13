@@ -1,9 +1,8 @@
 
 ### Olá! Eu sou Wesley Costa! 🙋‍♂️
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/ei_wesley.c/)
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wesley-oliveira-2bb352189/)
-[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/u/4/?pli=1#inbox)
+[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](wesleycoliveira2003@gmail.com)
 
 ![Wesley Costa GitHub stats](https://github-readme-stats.vercel.app/api?username=wesleycosta13&show_icons=true&theme=dracula)
 

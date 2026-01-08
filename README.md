@@ -1,4 +1,4 @@
-****# 👋 Olá, eu sou o Wesley Oliveira
+👋 Olá, eu sou o Wesley Oliveira
 
 Sou QA Engineer com experiência em testes manuais e automação de testes, atuando com foco em qualidade, prevenção de bugs e melhoria contínua dos produtos.
 

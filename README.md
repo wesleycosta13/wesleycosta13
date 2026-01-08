@@ -18,7 +18,7 @@ Sou QA Engineer com experiência em testes manuais e automação de testes, atua
 - Jira / Azure DevOps
 
 ## 📂 Projetos de Automação
-- 🔹Em andamento
+- 🔹Cypress-Automation-testes-E2E
 
 ## 📈 Em evolução
 Atualmente em transição de **QA Manual para QA Automation**, aprofundando conhecimentos em automação, boas práticas e arquitetura de testes.

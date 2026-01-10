@@ -1,46 +1,40 @@
-describe('DemoQA - Practice Form', () => {
+describe('Practice Form com Fixture', () => {
   beforeEach(() => {
-    // Open the practice form page
     cy.visit('https://demoqa.com/automation-practice-form')
-
-    // Remove ads that may overlap elements and break the test
-    cy.removeAds()
+    cy.get('#firstName').should('be.visible')
   })
 
-  it('Fill and submit the practice form', () => {
-    // Load test data from fixture
-    cy.fixture('user').then((user) => {
-      // Personal information
-      cy.get('#firstName').type(user.firstName)
-      cy.get('#lastName').type(user.lastName)
-      cy.get('#userEmail').type(user.email)
-
-      // Select gender (radio button)
-      cy.get('label[for="gender-radio-1"]').click()
-
-      // Phone number
-      cy.get('#userNumber').type(user.phone)
-
-      // Date of birth
+  it('completa formulário com sucesso', () => {
+    cy.fixture('user').as('userData')
+    
+    cy.get('@userData').then((user) => {
+      // Mapeamento dos campos
+      const fields = {
+        '#firstName': user.firstName,
+        '#lastName': user.lastName,
+        '#userEmail': user.email,
+        '#userNumber': user.phone,
+        '#currentAddress': user.address
+      }
+      
+      // Preenche campos básicos
+      Object.entries(fields).forEach(([selector, value]) => {
+        cy.get(selector).type(value)
+      })
+      
+      // Demais interações
+      cy.contains('Male').click()
+      
       cy.get('#dateOfBirthInput').click()
       cy.get('.react-datepicker__month-select').select('July')
       cy.get('.react-datepicker__year-select').select('1995')
-      cy.get(
-        '.react-datepicker__day--007:not(.react-datepicker__day--outside-month)'
-      ).click()
-
-      // Current address
-      cy.get('#currentAddress').type(user.address)
-
-      // Subjects (autocomplete field)
+      cy.contains('.react-datepicker__day', '7').click()
+      
       cy.get('#subjectsInput').type('Maths{enter}')
-
-      // Hobbies (checkboxes)
-      cy.get('label[for="hobbies-checkbox-1"]').click()
-      cy.get('label[for="hobbies-checkbox-3"]').click()
-
-      // State selection (React Select)
-      cy.get('#state')
+      cy.contains('Sports').click()
+      cy.contains('Music').click()
+      
+   cy.get('#state')
         .scrollIntoView()
         .click()
         .find('input')
@@ -52,15 +46,14 @@ describe('DemoQA - Practice Form', () => {
         .click()
         .find('input')
         .type('Delhi{enter}')
-
-      // Submit the form
-      cy.get('#submit')
-        .scrollIntoView()
-        .click({ force: true })
-
-      // Validate confirmation modal
-      cy.get('.modal-content').should('be.visible')
-      cy.contains('Thanks for submitting the form').should('be.visible')
+      
+      // Submit e validação
+      cy.get('#submit').click()
+      
+      cy.get('.modal-title').should('contain', 'Thanks for submitting')
+      cy.contains('td', 'Student Name')
+        .next()
+        .should('contain', `${user.firstName} ${user.lastName}`)
     })
   })
 })

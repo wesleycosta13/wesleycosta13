@@ -19,6 +19,7 @@ Sou QA Engineer com experiência em testes manuais e automação de testes, atua
 
 ## 📂 Projetos de Automação
 - 🔹Cypress-Automation-testes-E2E
+- 🔹Qa-cypress-automation
 
 ## 📈 Em evolução
 Atualmente em transição de **QA Manual para QA Automation**, aprofundando conhecimentos em automação, boas práticas e arquitetura de testes.
